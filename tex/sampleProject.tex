@@ -1,0 +1,73 @@
+\documentclass{vldb}
+
+
+\usepackage{times}
+\usepackage{color}
+\usepackage{balance}
+\usepackage{url}
+\usepackage{siunitx}
+\usepackage{epsfig,tabularx,amssymb,amsmath,subfigure,multirow, algorithm, algorithmic,graphicx}
+
+
+\newcommand{\stitle}[1]{\vspace{0.5ex} \noindent{\bf #1}}
+\long\def\comment#1{}
+
+
+
+\newcommand{\nop}[1]{}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\newtheorem{definition}{\bf Definition}
+\newtheorem{theorem}{\bf Theorem}[section]
+\newtheorem{lemma}{\bf Lemma}[section]
+\newtheorem{remark}{\bf Remark}[section]
+\newtheorem{corollary}{\bf Corollary}[section]
+
+
+
+\newcommand\abs[1]{\left\lvert #1 \right\rvert}
+
+
+\title{Title}
+
+\author{
+{Authors{\small $~^{\#}$} } %
+\vspace{1.6mm}\\
+\fontsize{10}{10}\selectfont\itshape
+$^{\#}$\,Institution, Address, Country
+}
+
+\begin{document}
+
+
+\maketitle
+
+
+\input{abstract.tex}
+
+
+
+\input{introduction.tex}
+
+%\input{problemDefinition.tex}
+%\input{proposedSolutions.tex}
+%\input{experimentalStudy.tex}
+%\input{relatedWork.tex}
+%\input{conclusion.tex}
+
+
+
+
+
+
+
+
+\bgroup\small
+\bibliographystyle{abbrv}
+\let\xxx=\bibitem\def\bibitem{\par\vspace{0.0mm}\xxx}
+\bibliography{../references/add}
+\egroup
+
+
+
+\end{document}
